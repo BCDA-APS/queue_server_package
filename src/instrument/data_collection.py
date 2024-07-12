@@ -5,10 +5,10 @@ configure for data collection in a console session
 from apstools.utils import *  # noqa
 
 from . import iconfig
-from .callbacks.spec_data_file_writer import specwriter
 from .initialize_bs_tools import RE
-from .devices import *  # noqa
-from .plans import *  # noqa
+from (8id).callbacks.spec_data_file_writer import specwriter
+from (8id).devices import *  # noqa
+from (8id).plans import *  # noqa
 import hdf5plugin  # noqa
 
 ## ipython helpers

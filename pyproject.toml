@@ -1,24 +1,25 @@
 [project]
-name = "aps_8id_bs_instrument"
+name = "queue_server_package"
 version = "0.0.1"
-description='APS 8ID Beamline Bluesky Instrument Control'
+description = "APS Queue Server Package"
 authors = [
     {name = "Eric Codrea", email = "ecodrea@anl.gov"},
-    {name = "Pete jemian", email = "pjemien@anl.gov"},
+    {name = "Ollivier Gassant", email = "ollivier.gassant@gmail.com"},
+    {name = "Pete Jemian", email = "pjemien@anl.gov"},
     {name = "Rafael Vescovi", email = "ravescovi@anl.gov"},
 ]
-requires-python = ">=3.10"
+requires_python = ">=3.10"
 readme = "README.md"
-license = {text = "MIT"}
+license = ""
 dependencies = [
+    "8_id_tools",
     "apstools",
     "bluesky",
-    "bluesky-queueserver",
+    "bluesky_queueserver",
     "ophyd",
-    "ophyd-registry",
-    "ipython",
+    "opyd_registry",
     "hdf5plugin",
-    "jupyterlab"
+    "IPython",
 ]
 
 [project.optional-dependencies]
@@ -31,8 +32,7 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/aps-8id-dys/bluesky"
-Downloads = "https://github.com/aps-8id-dys/bluesky.git"
+Homepage = "https://github.com/BCDA-APS/queue_server_package"
 
 ######################
 # Build Info + Tools #
@@ -43,7 +43,7 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-package-dir = {"aps_8id_bs_instrument" = "src/instrument"}
+package-dir = {"queue_server_package" = "src/instrument"}
 
 [tool.setuptools.package-data]
 "*" = ["*.txt", "*.yml"]
