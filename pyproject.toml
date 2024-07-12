@@ -12,7 +12,6 @@ requires_python = ">=3.10"
 readme = "README.md"
 license = ""
 dependencies = [
-    "8_id_tools",
     "apstools",
     "bluesky",
     "bluesky_queueserver",
